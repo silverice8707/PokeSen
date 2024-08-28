@@ -1,0 +1,103 @@
+:root {
+    --main: #ed1c24;
+    --subgrey: #a7a7a7;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--subgrey);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans';
+}
+
+
+
+.pokemon-logo-mini {
+    display: none;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1.9em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+
+}
+
+header a img {
+    height: 40px;
+
+}
+nav {
+    margin: 1.2em 0;
+}
+
+nav a {
+    display: flex;
+    color: #000;
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    padding: auto 0;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: .8em;
+    width: 142px;
+    height: 40px;
+    cursor: pointer;
+}
+
+nav a:hover {
+    border-color: rgb(95, 95, 95);
+    color: rgb(95, 95, 95);
+    transition: .3s;
+}
+
+nav a span {
+    margin-right: 0.5em;
+}
+
+main{
+    margin-top: 1.8em;
+}
+
+@media (max-width: 800px) {
+    
+    .pokemon-logo {
+        display: none;
+    } 
+    .pokemon-logo-mini {
+        display: block;
+    }
+}

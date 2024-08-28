@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "name": "Bulbasaur",
+        "image": "images/Bulbasaur.png",
+        "mainDesc": "An onion frog.",
+        "price": "29.00"
+    },
+    {
+        "id": "2",
+        "name": "Furret",
+        "image": "images/Furret.png",
+        "mainDesc": "Loves to walk.",
+        "price": "29.00"
+    },
+    {
+        "id": "3",
+        "name": "Miraidon",
+        "image": "images/Miraidon.png",
+        "mainDesc": "Bikers' best friend.",
+        "price": "29.00"
+    },
+    {
+        "id": "4",
+        "name": "Musharna",
+        "image": "images/Musharna.png",
+        "mainDesc": "Can't sleep? Time to count the sheep!",
+        "price": "29.00"
+    }
+]

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div>
+                <a class="pokemon-logo" href="index.html"><img src="images/logo.svg" alt="Pokemon center logo"></a>
+                <a class="pokemon-logo-mini" href="index.html"><img src="images/logo-mini.png" alt="Pokemon center logo"></a>
+            </div>
+            
+            <nav>
+                <a href="cart.html"><span class="fa-solid fa-bag-shopping"></span>View Cart</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="first-row">
+                <div class="left-col">
+                    <div class="image-container">
+                        <img src="images/Bulbasaur.png" alt="Bulbasaur">
+
+                    </div>
+                    <div class="slide-container">
+                        
+                        <button class="left-button"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="dots">
+                            <button class="dots-button active"></button>
+                            <button class="dots-button"></button>
+                            <button class="dots-button"></button>
+                        </div>
+                        <button class="right-button"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <div class="product-info1">
+                        <p class="product-title">Bulbasaur</p>
+                        <p class="product-subtitle">An onion frog.</p>
+                        <p class="product-price">$29</p>
+                    </div>
+                    <hr>
+                    <p class="text-quantity">Quantity</p>
+                    <div class="quantity-container">
+                        <button class="decrement-button inactive"><i class="fa-solid fa-minus" disabled></i></button>
+                        <input type="text" name="quantity" id="quantity" maxlength="2" pattern="[0-9]" class="quantity" value="1">
+                        <button class="increment-button"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+
+                    <button class="add-to-cart-button">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="second-row">
+                <div class="left-col">
+                    <div class="image-container">
+                        <img src="images/Bulbasaur_01.png" alt="Bulbasaur">
+
+                    </div>
+                    <!-- <div class="slide-button">
+                        
+                        <button class="left-button"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="dots">
+                            <button class="dots-button active"></button>
+                            <button class="dots-button"></button>
+                            <button class="dots-button"></button>
+                        </div>
+                        <button class="right-button"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div> -->
+                </div>
+                <div class="right-col">
+                    <p class="text-description">Description</p>
+                    <hr>
+                    <div class="wrapper-description">
+                        <p class="product-description">
+                            Sleepy, snoozy, and squishy Bulbasaur! This big Poké Plush looks peaceful—it's perfect for cuddling on the couch or just displaying in a favorite spot. You're sure to have sweet dreams when you curl up with this sleeping Grass-type friend!
+                        </p>
+
+                        <ul>
+                            <li>Measures about 10 inches tall and 16 inches long</li>
+                            <li>Could Bulbasaur be dreaming of starting a journey with its Trainer?</li>
+                            <li>Makes a nice contrast to smaller Kuttari Cuties</li>
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script type="module" src="productSwiper.js"></script> -->
+    <!-- <script type="text/javascript">
+        let html = document.getElementById('demo').innerHTML;
+        const queryParams = new URLSearchParams(window.location.search);
+        const id = queryParams.get('id');
+        fetch('Database.json')
+                .then(res => res.json())
+                .then(data => {database = data})
+                .then(() => {
+                    $.each(database, function(k, v){
+                        if (v.id == id)
+                        {
+
+                            document.getElementById('demo').innerHTML = v.name;
+                        }
+                    })
+                })
+    </script> -->
+</body>
+</html>

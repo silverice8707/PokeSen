@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div>
+                <a class="pokemon-logo" href="index.html"><img src="images/logo.svg" alt="Pokemon center logo"></a>
+                <a class="pokemon-logo-mini" href="index.html"><img src="images/logo-mini.png" alt="Pokemon center logo"></a>
+            </div>
+            
+            <nav>
+                <a href="cart.html"><span class="fa-solid fa-bag-shopping"></span>View Cart</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="first-row">
+                <div class="left-col">
+                    <p>Your Cart</p>
+                    <div class="scrollable">
+                        <div class="cart-item">
+                            <img src="images/Bulbasaur.png" alt="Bulbasaur">
+                            <div class="cart-card">
+                                <div class="cart-description">
+                                    <div>
+                                        <p class="product-title">Bulbasaur</p>
+                                        <p class="product-subtitle">An onion frog.</p>
+                                    </div>
+    
+                                    <p class="product-price">$29.00</p>
+                                </div>
+    
+                                <div class="cart-button-container">
+                                    <div class="quantity-container">
+                                        <button class="decrement-button inactive"><i class="fa-solid fa-minus" disabled></i></button>
+                                        <input type="text" name="quantity" id="quantity" maxlength="2" pattern="[0-9]" class="quantity" value="1">
+                                        <button class="increment-button"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+    
+                                    <button class="remove-button">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+    
+                        <div class="cart-item">
+                            <img src="images/Miraidon.png" alt="Miraidon">
+                            <div class="cart-card">
+                                <div class="cart-description">
+                                    <div>
+                                        <p class="product-title">Miraidon</p>
+                                        <p class="product-subtitle">Bikers' best friend.</p>
+                                    </div>
+    
+                                    <p class="product-price">$29.00</p>
+                                </div>
+    
+                                <div class="cart-button-container">
+                                    <div class="quantity-container">
+                                        <button class="decrement-button inactive"><i class="fa-solid fa-minus" disabled></i></button>
+                                        <input type="text" name="quantity" id="quantity" maxlength="2" pattern="[0-9]" class="quantity" value="1">
+                                        <button class="increment-button"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+    
+                                    <button class="remove-button">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+    
+                        <div class="cart-item">
+                            <img src="images/Mimikyu.png" alt="Mimikyu">
+                            <div class="cart-card">
+                                <div class="cart-description">
+                                    <div>
+                                        <p class="product-title">Mimikyu</p>
+                                        <p class="product-subtitle">Wants to be popular</p>
+                                    </div>
+    
+                                    <p class="product-price">$29.00</p>
+                                </div>
+    
+                                <div class="cart-button-container">
+                                    <div class="quantity-container">
+                                        <button class="decrement-button inactive"><i class="fa-solid fa-minus" disabled></i></button>
+                                        <input type="text" name="quantity" id="quantity" maxlength="2" pattern="[0-9]" class="quantity" value="1">
+                                        <button class="increment-button"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+    
+                                    <button class="remove-button">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="cart-item">
+                            <img src="images/Musharna.png" alt="Musharna">
+                            <div class="cart-card">
+                                <div class="cart-description">
+                                    <div>
+                                        <p class="product-title">Musharna</p>
+                                        <p class="product-subtitle">Can't sleep? Time to count the sheep!</p>
+                                    </div>
+    
+                                    <p class="product-price">$29.00</p>
+                                </div>
+    
+                                <div class="cart-button-container">
+                                    <div class="quantity-container">
+                                        <button class="decrement-button inactive"><i class="fa-solid fa-minus" disabled></i></button>
+                                        <input type="text" name="quantity" id="quantity" maxlength="2" pattern="[0-9]" class="quantity" value="1">
+                                        <button class="increment-button"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+    
+                                    <button class="remove-button">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="right-col">
+
+                    <p>Summary</p>
+                    <div>
+                        <div>
+                            <p class="text-left text">Subtotal</p>
+                            <p class="sum-subtotal text-right text">$116.00</p>
+                        </div>
+                        <div>
+                            <p class="text-left text">Shipping and delivery</p>
+                            <p class="sum-shipping text-right text">$20.00</p>
+                        </div>
+                        <div>
+                            <p class="text-left text">Tax</p>
+                            <p class="sum-tax text-right text">$6.00</p>
+                        </div>
+                        <div>
+                            <p class="text-left text">Discount</p>
+                            <p class="text-right text text-highlight">-$6.00</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="text-total">Total</p>
+                        <p class="sum-total text-right text">$136.00</p>
+                    </div>
+
+                    <button class="checkout-button">Checkout</button>
+                </div>
+            </div>
+
+            
+
+            
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script type="module" src="productSwiper.js"></script> -->
+    <!-- <script type="text/javascript">
+        let html = document.getElementById('demo').innerHTML;
+        const queryParams = new URLSearchParams(window.location.search);
+        const id = queryParams.get('id');
+        fetch('Database.json')
+                .then(res => res.json())
+                .then(data => {database = data})
+                .then(() => {
+                    $.each(database, function(k, v){
+                        if (v.id == id)
+                        {
+
+                            document.getElementById('demo').innerHTML = v.name;
+                        }
+                    })
+                })
+    </script> -->
+</body>
+</html>

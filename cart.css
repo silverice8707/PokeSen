@@ -1,0 +1,260 @@
+hr {
+    border-block: .5px solid rgb(238, 238, 238);
+    margin-block: 2em;
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.first-row {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 4em;
+    gap: 3em;
+    align-items: flex-start;
+
+}
+
+.left-col {
+    width: 50%;
+}
+
+.left-col > p, .right-col > p {
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: .8em;
+}
+
+.scrollable {
+    height: 700px;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    margin-right: 1em;
+    gap:1em;
+}
+
+.cart-item > img {
+    width: 166px;
+    height: auto;
+    background-color: #EAEEEF;
+    border-radius: 1.8em;
+}
+
+.cart-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cart-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.product-subtitle {
+    font-size: 1.8rem;
+    color: #67696E;
+
+}
+
+.product-price {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.cart-button-container {
+    display: flex;
+    gap: 3em;
+}
+
+.quantity-container {
+    display: inline-flex;
+    padding: .8em;
+    background-color: white;
+    gap: 1em;
+    justify-content: center;
+    border-radius: .8em;
+    border: 1px solid #E9EBEE;
+}
+
+.quantity-container > .inactive {
+    color: #a6a4a6;
+    pointer-events: none;
+}
+
+.decrement-button, .increment-button{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.quantity {
+    font-size: 1.5rem;
+    border: none;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+}
+.quantity:focus {
+    outline: none;
+}
+
+.remove-button {
+    text-decoration: underline;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #67696E;
+
+}
+
+.right-col {
+    width: 50%;
+    background-color: white;
+    border-radius: 4em;
+    box-shadow: 2px 2px 50px rgb(236, 236, 236);
+    padding: 3.6em;
+}
+
+.right-col > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.right-col > div:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4em;
+
+}
+
+.right-col > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text {
+    font-weight: 600;
+}
+
+.text-left {
+    font-size: 2em;
+}
+
+.text-right {
+    font-size: 1.8em;
+}
+
+.text-highlight {
+    color: var(--main);
+}
+
+.text-total {
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+.sum-total {
+    margin-block: auto;
+}
+
+.checkout-button {
+    font-size: 1.8rem;
+    background-color: black;
+    color: white;
+    width: 100%;
+    border-radius: 1em;
+    padding-block: 1em;
+}
+
+.checkout-button:hover {
+    background-color: rgb(95, 95, 95);
+    transition: .3s;
+}
+
+@media (max-width: 800px) {
+
+    .scrollable {
+        overflow-y: initial;
+    }
+    .first-row {
+        flex-direction: column-reverse;
+    }
+
+    .left-col {
+        width: 100%;
+    }
+
+    .left-col > p, .right-col > p {
+        font-size: 2.8em;
+    }
+
+    .cart-item > img {
+        width: 141px;
+    }
+
+    .cart-button-container {
+        flex-direction: column;
+        align-self: start;
+        gap: 1.6em;
+    }
+
+    .remove-button {
+        align-self: start;
+    }
+    .product-title {
+        font-size: 1.6rem;
+    }
+    
+    .product-subtitle {
+        font-size: 1.4rem;
+        color: #67696E;
+    
+    }
+    
+    .product-price {
+        font-size: 1.4rem;
+    }
+
+    .remove-button {
+        font-size: 1.4rem;
+    }
+
+    .right-col {
+        width: 100%;
+    }
+
+    .text-left {
+        font-size: 1.6em;
+    }
+    
+    .text-right {
+        font-size: 1.4em;
+    }
+
+    .text-total {
+        font-size: 1.8rem;
+    }
+}
